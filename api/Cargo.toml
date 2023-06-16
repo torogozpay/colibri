@@ -1,0 +1,20 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+application = { path = "../application" }
+shared = { path = "../shared" }
+
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
+serde = "1.0.149"
+serde_json = "1.0.88"
+hex = "0.4.3"
+dotenv = "0.15.0"
+tonic_openssl_lnd = "0.2.0"
+
+
+

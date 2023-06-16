@@ -1,0 +1,22 @@
+[workspace]
+members = [
+  "api",
+  "infrastructure",
+  "application",
+  "shared",
+]
+
+
+[debug]
+address = "127.0.0.1"
+port = 8000
+keep_alive = 5
+log = "debug"
+limits = { forms = 32768 }
+
+[release]
+address = "127.0.0.1"
+port = 8000
+keep_alive = 5
+log = "debug"
+limits = { forms = 32768 }
